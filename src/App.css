@@ -1,9 +1,88 @@
 /* Add styling for your page here */
 
-.App {
-
+* {
+  box-sizing: border-box;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  color: rgb(41, 87, 41);
 }
 
-.BakeryItem {
-  
+.App {
+  width: 100vw;
+  height: 100dvh;
+  display: flex;
+  padding: 1em;
+  flex-direction: column;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+}
+
+.bakery-item-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  column-gap: 1em;
+}
+
+.cart-container {
+  width: calc(20vw - 1em);
+  margin-left: 1em;
+  color: black;
+}
+
+.menu {
+  width: calc(80vw - 2em);
+}
+
+.bakery-item {
+  width: calc((100% - 4em) / 5);
+  display: flex;
+  flex-direction: column;
+  height: 20em;
+  justify-content: space-between;
+  margin-bottom: 2em;
+}
+
+.bakery-item img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 0.5em;
+}
+
+h1 {
+  font-size: 5em;
+  margin-bottom: 0.2em;
+  padding-bottom: 0.25em;
+  border-bottom: 1px rgb(41, 87, 41) solid;
+}
+
+.item-description {
+  margin-bottom: 1em;
+}
+
+.purchase {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.purchase button {
+  background: rgb(41, 87, 41);
+  color: white;
+  border: none;
+  font-size: 0.75em;
+  padding: 0.25em 0.75em;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  border-radius: 16px;
+}
+
+h2 {
+  margin-bottom: 1em;
 }
